@@ -7,7 +7,7 @@
       </a>
     </h1>
     <button class="rwdBtn" @click="isOpen = !isOpen"></button>
-    <ul class="menu">
+    <ul class="menu" :class="{ setOpen: isOpen }">
       <li class="item">
         <a class="link" href="">skills</a>
       </li>
@@ -19,20 +19,6 @@
       </li>
       <li class="item">
         <a class="link" href="">contact</a>
-      </li>
-    </ul>
-    <ul class="rwdMenu" :class="{'setOpen' : isOpen}">
-      <li class="rwdItem">
-        <a class="rwdLink" href="">skills</a>
-      </li>
-      <li class="rwdItem">
-        <a class="rwdLink" href="">profiles</a>
-      </li>
-      <li class="rwdItem">
-        <a class="rwdLink" href="">about</a>
-      </li>
-      <li class="rwdItem">
-        <a class="rwdLink" href="">contact</a>
       </li>
     </ul>
   </header>
@@ -54,18 +40,22 @@ export default {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   padding: 10px 50px;
   position: fixed;
   left: 0;
   right: 0;
-  background: #24292E;
+  top: 0;
+  background: #24292e;
+  z-index: 1000;
   @media (max-width: 767px) {
-      padding: 10px 15px;
+    padding: 10px 15px;
   }
 }
 .title {
   a {
+    display: block;
     color: #ffffff;
     padding: 8px;
     transition: 0.15s;
@@ -96,11 +86,20 @@ export default {
 }
 .menu {
   display: flex;
+  transition: 0.3s;
   @media (max-width: 767px) {
-    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: red;
+    flex-direction: column;
+    max-height: 0px;
+    overflow: hidden;
   }
   .item {
     .link {
+      display: block;
       padding: 8px;
       color: #ffffff;
       transition: 0.15s;
@@ -108,32 +107,13 @@ export default {
         cursor: pointer;
         color: #2bcbba;
       }
-    }
-  }
-}
-.rwdMenu {
-  position: absolute;
-  top: 44px;
-  right: 0;
-  left: 0;
-  background: #24292E;
-  max-height: 0px;
-  transition: 0.4s;
-  @media (min-width: 767px) {
-    display: none;
-  }
-  .rwdItem {
-    .rwdLink {
-      display: block;
-      padding: 10px;
-      color: #ffffff;
-      &:active {
-        background: violet;
+      @media (max-width: 767px) {
+        width: 100%;
       }
     }
   }
 }
-.setOpen{
+.setOpen {
   max-height: 176px;
 }
 </style>
