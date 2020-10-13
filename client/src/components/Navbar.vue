@@ -47,7 +47,8 @@ export default {
   left: 0;
   right: 0;
   top: 0;
-  background: #24292e;
+  background: black;
+  opacity: 0.8;
   z-index: 1000;
   @media (max-width: 767px) {
     padding: 10px 15px;
