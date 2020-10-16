@@ -2,7 +2,7 @@
   <header class="navbar">
     <h1 class="title">
       <a href="#">
-        <img src="../assests/png/balloons-16.png" alt="" />
+        <img src="../assets/png/balloons-16.png" alt="" />
         李冠容
       </a>
     </h1>
@@ -74,7 +74,7 @@ export default {
   border: none;
   padding: 0;
   background: transparent;
-  background-image: url("../assests/svg/rwdNavBtn.svg");
+  background-image: url("../assets/svg/rwdNavBtn.svg");
   &:hover {
     cursor: pointer;
   }

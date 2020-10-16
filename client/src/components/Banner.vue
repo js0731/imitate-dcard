@@ -23,7 +23,7 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  background: url("../assests/jpg/coffee-communication-compose-composer.jpg")
+  background: url("../assets/jpg/coffee-communication-compose-composer.jpg")
     no-repeat;
   background-size: cover;
   background-position: center center; /* 圖像置中 */
