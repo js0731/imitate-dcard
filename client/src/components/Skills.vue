@@ -1,105 +1,106 @@
 <template>
   <section class="skills">
-    <h2>Skills</h2>
-    <button @click="a()">清單 / 圖示</button>
-    <ul class="skillMenu">
-      <li class="skillItem">
-        <Icon name="html" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">Html</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+    <h2 class="title">Skills</h2>
+    <button @click="switchDisplay()">清單 / 圖示</button>
+    <ul class="iconMenu">
+      <li class="iconItem">
+        <Icon name="html" class="icon" :class="{ switchIcon: iconDisplay }" />
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">Html</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ seo搜尋優化</li>
         </ul>
       </li>
-      <li class="skillItem">
-        <Icon name="css" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">Css</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+      <li class="iconItem">
+        <Icon name="css" class="icon" :class="{ switchIcon: iconDisplay }">
+        </Icon>
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">Css</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ seo搜尋優化</li>
         </ul>
       </li>
-      <li class="skillItem">
-        <Icon name="js" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">JavaScript</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+      <li class="iconItem">
+        <Icon name="js" class="icon" :class="{ switchIcon: iconDisplay }">
+        </Icon>
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">JavaScript</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ seo搜尋優化</li>
         </ul>
       </li>
-      <li class="skillItem">
-        <Icon name="git" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">Git</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+      <li class="iconItem">
+        <Icon name="git" class="icon" :class="{ switchIcon: iconDisplay }">
+        </Icon>
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">Git</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ seo搜尋優化</li>
         </ul>
       </li>
-      <li class="skillItem">
-        <Icon name="jquery" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">Jquery</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+      <li class="iconItem">
+        <Icon name="jquery" class="icon" :class="{ switchIcon: iconDisplay }">
+        </Icon>
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">Jquery</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
         </ul>
       </li>
-      <li class="skillItem">
-        <Icon name="mongodb" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">MongoDB</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+      <li class="iconItem">
+        <Icon name="mongodb" class="icon" :class="{ switchIcon: iconDisplay }">
+        </Icon>
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">MongoDB</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ seo搜尋優化</li>
         </ul>
       </li>
-      <li class="skillItem">
-        <Icon name="react" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">React</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+      <li class="iconItem">
+        <Icon name="react" class="icon" :class="{ switchIcon: iconDisplay }">
+        </Icon>
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">React</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ seo搜尋優化</li>
         </ul>
       </li>
-      <li class="skillItem">
-        <Icon name="vue" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">Vue</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+      <li class="iconItem">
+        <Icon name="vue" class="icon" :class="{ switchIcon: iconDisplay }">
+        </Icon>
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">Vue</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
         </ul>
       </li>
-      <li class="skillItem">
-        <Icon name="webpack" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">Webpack</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+      <li class="iconItem">
+        <Icon name="webpack" class="icon" :class="{ switchIcon: iconDisplay }">
+        </Icon>
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">Webpack</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ seo搜尋優化</li>
         </ul>
       </li>
-      <li class="skillItem">
-        <Icon name="nodejs" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">NodeJs</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+      <li class="iconItem">
+        <Icon name="nodejs" class="icon" :class="{ switchIcon: iconDisplay }">
+        </Icon>
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">NodeJs</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
         </ul>
       </li>
-      <li class="skillItem">
-        <Icon name="postman" class="icon"> </Icon>
-        <ul class="hiddenMenu">
-          <p class="hiddenText">Postman</p>
-          <li class="hiddenItem">✔ 語意化命名標籤</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
-          <li class="hiddenItem">✔ seo搜尋優化</li>
+      <li class="iconItem">
+        <Icon name="postman" class="icon" :class="{ switchIcon: iconDisplay }">
+        </Icon>
+        <ul class="ilistMenu" :class="{ switchList: listDisplay }">
+          <p class="listTitle">Postman</p>
+          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ seo搜尋優化</li>
         </ul>
       </li>
     </ul>
@@ -111,11 +112,15 @@ import Icon from "./Icon";
 
 export default {
   data() {
-    return {};
+    return {
+      iconDisplay: false,
+      listDisplay: false,
+    };
   },
   methods: {
-    a: function () {
-      console.log("a");
+    switchDisplay: function () {
+      this.iconDisplay = !this.iconDisplay;
+      this.listDisplay = !this.listDisplay;
     },
   },
   components: {
@@ -126,31 +131,27 @@ export default {
 
 <style lang="scss" scoped>
 .skills {
-  width: 100%;
-  background-attachment: fixed; /* 固定圖像 */
-  background-position: center center; /* 圖像置中 */
-  background-size: cover;
-  background: #353b48;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  h2 {
-    margin-top: 30px;
-    font-weight: 600;
-    font-size: 2rem;
+  flex-direction: column;
+  background: #353b48;
+  padding: 30px 0;
+  .title {
     text-align: center;
     color: #ffffff;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
   button {
-    background: #ffffff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     font-size: 20px;
     font-weight: 600;
     background: #00a8ff;
-    box-shadow: inset -2px -2px 1px black;
     color: #ffffff;
+    box-shadow: inset -2px -2px 1px black;
     &:hover {
       cursor: pointer;
     }
@@ -162,44 +163,56 @@ export default {
     }
   }
 }
-.skillMenu {
+.iconMenu {
   max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
-
-  .skillItem {
+  justify-content: center;
+  .iconItem {
     width: 150px;
     height: 150px;
-    margin: 50px;
     position: relative;
     overflow: hidden;
-    &:hover .hiddenMenu {
+    margin: 50px;
+    &:hover .ilistMenu {
       bottom: 0;
     }
+    .icon {
+      position: absolute;
+      transition: 0.3s;
+      top: 0;
+    }
     &:hover .icon {
-      display: none;
+      position: absolute;
+      top: -100%;
     }
   }
 }
-.hiddenMenu {
+.ilistMenu {
   width: 150px;
   height: 150px;
-  position: absolute;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
   bottom: -100%;
-  transition: 0.5s;
-  .hiddenText {
+  text-align: center;
+  transition: 0.3s;
+  .listTitle {
     font-size: 24px;
     text-align: center;
     font-weight: 600;
     color: #ffffff;
   }
-  .hiddenItem {
+  .listItem {
     color: #ffffff;
     font-size: 14px;
   }
+}
+.switchList {
+  bottom: 0;
+}
+.switchIcon {
+  top: -100% !important;
 }
 </style>
