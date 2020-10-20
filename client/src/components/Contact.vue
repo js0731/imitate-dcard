@@ -2,13 +2,48 @@
   <section class="contact">
     <p class="title">CONTACT</p>
     <div class="card">
-      <img src="http://fakeimg.pl/200x200" alt="" />
-      <p>您好，</p>
+      <div class="banner">
+        <img class="avatar" src="http://fakeimg.pl/150x150" alt="" />
+      </div>
+      <h3 class="name">李冠容</h3>
+      <a href="mailto:a0905050792@gmail.com">
+        <Icon name="mail" class="icon" />
+        a0905050792@gmail.com
+      </a>
+      <a href="tel:+886-905050792">
+        <Icon name="phone" class="icon" />
+        0905050792
+      </a>
+      <ul class="footer">
+        <li>
+          <a href="https://github.com/js0731?tab=repositories">
+            <Icon name="github"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100003690614819">
+            <Icon name="fb"
+          /></a>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
 
 <script>
+import Icon from "./Icon";
+export default {
+  name: "contact",
+  components: {},
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+  components: {
+    Icon,
+  },
+};
 </script>
  
 <style lang="scss" scoped>
@@ -17,14 +52,63 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: 50px 0;
   .title {
     font-weight: 600;
     font-size: 2rem;
     margin-bottom: 12px;
   }
 }
+.icon {
+  width: 18px;
+  height: 18px;
+}
 .card {
-  width: 280px;
-  border: 2px solid black;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  .banner {
+    width: 100%;
+    height: 150px;
+    background: #95a5a6;
+    position: relative;
+    margin-bottom: 60px;
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+  h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  a {
+    display: block;
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #dfe6e9;
+    li {
+      width: 36px;
+      height: 36px;
+      margin: 10px;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
 }
 </style>

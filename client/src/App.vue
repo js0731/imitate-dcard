@@ -3,10 +3,10 @@
   <div id="app">
     <Navbar />
     <Banner />
-    <Contact />
+    <About />
     <Skills />
     <Portfolios />
-    <About />
+    <Contact />
   </div>
 </template>
 
