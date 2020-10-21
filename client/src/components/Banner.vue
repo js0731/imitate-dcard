@@ -8,24 +8,28 @@
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/all.scss";
 .banner {
   width: 100%;
   height: 100vh;
-  background: url("../assets/jpg/coffee-communication-compose-composer.jpg")
-    no-repeat;
-  background-size: cover;
-  background-position: center center; /* 圖像置中 */
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url("../assets/png/star.jpg");
+  background-size: cover;
+  background-position: bottom center;
   .title {
-    margin: 0px auto;
-    font-size: 3rem;
     max-width: 500px;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    padding: 8px;
+    font-size: 3rem;
+    font-weight: 600;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
     color: #ffffff;
+    margin: 0px auto;
+    padding: 8px;
+    @include phone {
+      font-size: 2rem;
+    }
   }
 }
 </style>
