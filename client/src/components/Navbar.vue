@@ -1,26 +1,28 @@
 <template>
   <header class="navbar">
-    <h1 class="title">
-      <a href="#">
-        <img src="../assets/png/balloons-16.png" alt="" />
-        李冠容
-      </a>
-    </h1>
-    <button class="rwdBtn" @click="isOpen = !isOpen"></button>
-    <ul class="menu" :class="{ setOpen: isOpen }">
-      <li class="item">
-        <a class="link" href="">skills</a>
-      </li>
-      <li class="item">
-        <a class="link" href="">profiles</a>
-      </li>
-      <li class="item">
-        <a class="link" href="">about</a>
-      </li>
-      <li class="item">
-        <a class="link" href="">contact</a>
-      </li>
-    </ul>
+    <div class="container">
+      <h1 class="title">
+        <a href="#">
+          <img src="../assets/png/balloons-16.png" alt="" />
+          李冠容
+        </a>
+      </h1>
+      <button class="rwdBtn" @click="isOpen = !isOpen"></button>
+      <ul class="menu" :class="{ setOpen: isOpen }">
+        <li class="item">
+          <a class="link" href="">skills</a>
+        </li>
+        <li class="item">
+          <a class="link" href="">profiles</a>
+        </li>
+        <li class="item">
+          <a class="link" href="">about</a>
+        </li>
+        <li class="item">
+          <a class="link" href="">contact</a>
+        </li>
+      </ul>
+    </div>
   </header>
 </template>
 
@@ -38,21 +40,21 @@ export default {
 
 <style lang="scss" scoped>
 .navbar {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  background: rgba($color: #000000, $alpha: 0.8);
+}
+.container {
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   padding: 10px 50px;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  background: black;
-  opacity: 0.8;
-  z-index: 1000;
-  @media (max-width: 767px) {
-    padding: 10px 15px;
-  }
 }
 .title {
   a {
