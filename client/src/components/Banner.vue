@@ -1,6 +1,6 @@
 <template>
   <section class="banner">
-    <h2 class="title animate__animated animate__backInUp">你好，我是李冠容</h2>
+    <h2 class="title animate__animated animate__bounce">你好，我是李冠容</h2>
   </section>
 </template>
 
