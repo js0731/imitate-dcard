@@ -53,10 +53,12 @@ export default {
   align-items: center;
   width: 100%;
   padding: 50px 0;
+  background: red;
   .title {
     font-weight: 600;
     font-size: 2rem;
     margin-bottom: 12px;
+    color: #ffffff;
   }
 }
 .icon {
