@@ -3,7 +3,11 @@
     <p class="title">CONTACT</p>
     <div class="card">
       <div class="banner">
-        <img class="avatar" src="http://fakeimg.pl/150x150" alt="" />
+        <img
+          class="avatar"
+          src="https://raw.githubusercontent.com/js0731/resume/master/img/avatar.jpg"
+          alt=""
+        />
       </div>
       <h3 class="name">李冠容</h3>
       <a href="mailto:a0905050792@gmail.com">
@@ -14,14 +18,17 @@
         <Icon name="phone" fill="#FFF" class="icon" />
         0905050792
       </a>
-      <ul class="footer">
+      <ul class="bottom">
         <li>
           <a href="https://github.com/js0731?tab=repositories" target="_blank">
             <Icon name="github"
           /></a>
         </li>
         <li>
-          <a href="https://www.facebook.com/profile.php?id=100003690614819" target="_blank">
+          <a
+            href="https://www.facebook.com/profile.php?id=100003690614819"
+            target="_blank"
+          >
             <Icon name="fb"
           /></a>
         </li>
@@ -72,7 +79,7 @@ export default {
   .banner {
     width: 100%;
     height: 150px;
-    background: #718093;
+    background: #fff;
     position: relative;
     margin-bottom: 60px;
     .avatar {
@@ -88,27 +95,27 @@ export default {
   }
   h3 {
     font-size: 1.8rem;
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
-    color:#fff;
+    color: #fff;
   }
   a {
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color:#fff;
-    .icon{
-      margin:0 5px;
+    color: #fff;
+    .icon {
+      margin: 0 5px;
     }
   }
-  .footer {
+  .bottom {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  background: #718093;
+    background: #fff;
     li {
       width: 36px;
       height: 36px;
