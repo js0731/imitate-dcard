@@ -7,21 +7,21 @@
       </div>
       <h3 class="name">李冠容</h3>
       <a href="mailto:a0905050792@gmail.com">
-        <Icon name="mail" class="icon" />
+        <Icon name="mail" fill="#FFF" class="icon" />
         a0905050792@gmail.com
       </a>
       <a href="tel:+886-905050792">
-        <Icon name="phone" class="icon" />
+        <Icon name="phone" fill="#FFF" class="icon" />
         0905050792
       </a>
       <ul class="footer">
         <li>
-          <a href="https://github.com/js0731?tab=repositories">
+          <a href="https://github.com/js0731?tab=repositories" target="_blank">
             <Icon name="github"
           /></a>
         </li>
         <li>
-          <a href="https://www.facebook.com/profile.php?id=100003690614819">
+          <a href="https://www.facebook.com/profile.php?id=100003690614819" target="_blank">
             <Icon name="fb"
           /></a>
         </li>
@@ -52,12 +52,12 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 50px 0;
-  background: red;
+  padding: 30px 0 52px 0;
+  background: #487eb0;
   .title {
     font-weight: 600;
     font-size: 2rem;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     color: #ffffff;
   }
 }
@@ -72,7 +72,7 @@ export default {
   .banner {
     width: 100%;
     height: 150px;
-    background: #95a5a6;
+    background: #718093;
     position: relative;
     margin-bottom: 60px;
     .avatar {
@@ -88,20 +88,27 @@ export default {
   }
   h3 {
     font-size: 1.8rem;
+    font-weight:bold;
     text-align: center;
     margin-bottom: 10px;
+    color:#fff;
   }
   a {
-    display: block;
-    color: black;
+    display: flex;
+    justify-content:center;
+    align-items:center;
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color:#fff;
+    .icon{
+      margin:0 5px;
+    }
   }
   .footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: #dfe6e9;
+  background: #718093;
     li {
       width: 36px;
       height: 36px;

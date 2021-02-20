@@ -8,8 +8,6 @@
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">Html</p>
           <li class="listItem">✔ 語意化命名標籤</li>
-          <li class="listItem">✔ seo搜尋優化</li>
-          <li class="listItem">✔ seo搜尋優化</li>
         </ul>
       </li>
       <li class="iconItem">
@@ -17,8 +15,9 @@
         </Icon>
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">Css</p>
-          <li class="listItem">✔ 語意化命名標籤</li>
-          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ SCSS</li>
+          <li class="listItem">✔ Flex box</li>
+          <li class="listItem">✔ RWD 手刻 breakpoints</li>
         </ul>
       </li>
       <li class="iconItem">
@@ -26,9 +25,8 @@
         </Icon>
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">JavaScript</p>
-          <li class="listItem">✔ 語意化命名標籤</li>
-          <li class="listItem">✔ seo搜尋優化</li>
-          <li class="listItem">✔ seo搜尋優化</li>
+
+          <li class="listItem">✔ 瞭解 DOM 模型、閉包、AJAX、ES6+ 等基本概念</li>
         </ul>
       </li>
       <li class="iconItem">
@@ -36,9 +34,9 @@
         </Icon>
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">Git</p>
-          <li class="listItem">✔ 語意化命名標籤</li>
-          <li class="listItem">✔ seo搜尋優化</li>
-          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ Github 進行團隊協作</li>
+          <li class="listItem">✔ GitPage 部署</li>
+          <li class="listItem">✔ Heroku 部署</li>
         </ul>
       </li>
       <li class="iconItem">
@@ -46,7 +44,8 @@
         </Icon>
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">Jquery</p>
-          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ 操作 DOM 元素</li>
+          <li class="listItem">✔ 基本動畫效果</li>
         </ul>
       </li>
       <li class="iconItem">
@@ -54,8 +53,8 @@
         </Icon>
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">MongoDB</p>
-          <li class="listItem">✔ 語意化命名標籤</li>
-          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ CRUD 等基本操作</li>
+          <li class="listItem">✔ Robo 3T</li>
         </ul>
       </li>
       <li class="iconItem">
@@ -63,9 +62,8 @@
         </Icon>
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">React</p>
-          <li class="listItem">✔ 語意化命名標籤</li>
-          <li class="listItem">✔ seo搜尋優化</li>
-          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ react-router</li>
+          <li class="listItem">✔ Hooks</li>
         </ul>
       </li>
       <li class="iconItem">
@@ -73,7 +71,10 @@
         </Icon>
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">Vue</p>
-          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ data 雙向綁定</li>
+          <li class="listItem">✔ 模板元件化</li>
+          <li class="listItem">✔ Vuex</li>
+          <li class="listItem">✔ vue-router</li>
         </ul>
       </li>
       <li class="iconItem">
@@ -81,9 +82,7 @@
         </Icon>
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">Webpack</p>
-          <li class="listItem">✔ 語意化命名標籤</li>
-          <li class="listItem">✔ seo搜尋優化</li>
-          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ 轉換 ES6、CSS預處理、打包圖片檔案等</li>
         </ul>
       </li>
       <li class="iconItem">
@@ -91,7 +90,8 @@
         </Icon>
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">NodeJs</p>
-          <li class="listItem">✔ 語意化命名標籤</li>
+          <li class="listItem">✔ npm 工具使用</li>
+          <li class="listItem">✔ Express.js 架設 Web 應用</li>
         </ul>
       </li>
       <li class="iconItem">
@@ -99,8 +99,7 @@
         </Icon>
         <ul class="ilistMenu" :class="{ switchList: listDisplay }">
           <p class="listTitle">Postman</p>
-          <li class="listItem">✔ 語意化命名標籤</li>
-          <li class="listItem">✔ seo搜尋優化</li>
+          <li class="listItem">✔ API 測試</li>
         </ul>
       </li>
     </ul>
@@ -193,7 +192,7 @@ export default {
   height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   position: absolute;
   bottom: -100%;
   text-align: center;

@@ -28,18 +28,18 @@ export default {
         },
         {
           name: "時鐘",
-          link: "https://js0731.github.io/portfolio/RGBCOLOR/ColorGame.html",
+          link: "https://js0731.github.io/portfolio/clock/clock.html",
           imgPath: require("../assets/png/clock.png"),
         },
         {
           name: "ColorGame",
-          link:
-            "https://js0731.github.io/portfolio/Tic-tac-toe/tic_tac_toe.html",
+          link: "https://js0731.github.io/portfolio/RGBCOLOR/ColorGame.html",
           imgPath: require("../assets/png/colorGame.png"),
         },
         {
           name: "Tic-Tac-Toe",
-          link: "https://js0731.github.io/portfolio/clock/clock.html",
+          link:
+            " https://js0731.github.io/portfolio/Tic-tac-toe/tic_tac_toe.html",
           imgPath: require("../assets/png/tictactoe.png"),
         },
         {
@@ -48,9 +48,10 @@ export default {
           imgPath: require("../assets/png/todolist.png"),
         },
         {
-          name: "計算機",
-          link: "https://js0731.github.io/portfolio/Calculator/caculator.html",
-          imgPath: require("../assets/png/calculator.png"),
+          name: "模仿 Dcard 網站 ",
+          link:
+            "https://js0731.github.io/MEVN_Imitate_Dcard/client/dist/index.html",
+          imgPath: require("../assets/png/imitate_dcard.png"),
         },
       ],
     };
@@ -60,7 +61,7 @@ export default {
 
 <style lang="scss" scoped>
 .portfolios {
-  background: #d2dae2;
+  background: #718093;
   padding: 30px 0;
   display: flex;
   align-items: center;
