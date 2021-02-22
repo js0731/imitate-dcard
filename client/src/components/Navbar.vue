@@ -5,6 +5,7 @@
         <a
           class="logo"
           href="https://js0731.github.io/resume/client/dist/index.html#/"
+          @click.prevent="target('.banner')"
         >
           李冠容
         </a>
