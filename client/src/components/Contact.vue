@@ -60,8 +60,7 @@ export default {
   align-items: center;
   width: 100%;
   padding: 30px 0 52px 0;
-  /* background: #487eb0; */
-  background: #4b6584;
+  background: #487eb0;
   .title {
     font-weight: 600;
     font-size: 2rem;
