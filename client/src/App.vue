@@ -1,7 +1,7 @@
 
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar v-on:childEvent="slideTarget" />
     <Banner />
     <About />
     <Skills />
@@ -27,6 +27,13 @@ export default {
     Skills,
     Portfolios,
     About,
+  },
+  methods: {
+    slideTarget(name) {
+      document
+        .querySelector(name)
+        .scrollIntoView({ behavior: "smooth", block: "center" });
+    },
   },
 };
 </script>

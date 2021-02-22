@@ -31,7 +31,7 @@ export default {
     margin: 0 auto;
     text-align: center;
     padding: 0 10px;
-    color:#fff;
+    color: #fff;
   }
 }
 </style>

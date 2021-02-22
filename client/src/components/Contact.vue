@@ -60,7 +60,8 @@ export default {
   align-items: center;
   width: 100%;
   padding: 30px 0 52px 0;
-  background: #487eb0;
+  /* background: #487eb0; */
+  background: #4b6584;
   .title {
     font-weight: 600;
     font-size: 2rem;
@@ -76,10 +77,11 @@ export default {
   width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
+
   .banner {
     width: 100%;
     height: 150px;
-    background: #fff;
+    background: #bdc3c7;
     position: relative;
     margin-bottom: 60px;
     .avatar {
@@ -115,7 +117,7 @@ export default {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: #fff;
+    background: #bdc3c7;
     li {
       width: 36px;
       height: 36px;

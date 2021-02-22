@@ -2,19 +2,26 @@
   <header class="navbar">
     <ul class="menu">
       <h1 class="title">
-        <a class="logo" href="#"> 李冠容 </a>
+        <a
+          class="logo"
+          href="https://js0731.github.io/resume/client/dist/index.html#/"
+        >
+          李冠容
+        </a>
       </h1>
       <li class="item">
-        <a class="link" href="">skills</a>
+        <a class="link" href="#" @click.prevent="target('.about')">about</a>
       </li>
       <li class="item">
-        <a class="link" href="">profiles</a>
+        <a class="link" href="#" @click.prevent="target('.skills')">skills</a>
       </li>
       <li class="item">
-        <a class="link" href="">about</a>
+        <a class="link" href="#" @click.prevent="target('.portfolios')"
+          >portfolios</a
+        >
       </li>
       <li class="item">
-        <a class="link" href="">contact</a>
+        <a class="link" href="#" @click.prevent="target('.contact')">contact</a>
       </li>
     </ul>
   </header>
@@ -24,6 +31,11 @@
 export default {
   name: "navbar",
   components: {},
+  methods: {
+    target(name) {
+      this.$emit("childEvent", name); //觸發一個在子元件中宣告的事件 childEvnet
+    },
+  },
 };
 </script>
 
@@ -36,7 +48,7 @@ export default {
   right: 0;
   z-index: 1000;
   background: rgba($color: black, $alpha: 0.6);
-  border-radius: 0 0 8px 8px;
+
   @include phone {
     bottom: 0;
     border-radius: 8px 8px 0 0;
